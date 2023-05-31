@@ -4,7 +4,7 @@ Here is some information about different motorcycle models:
 
 ## Model 1
 
-![Model 1](images.jpg)
+![Model 1](2023-BMW-M1000RR-21-scaled.jpg)
 
 Description of Model 1.
 
