@@ -2,7 +2,7 @@
 
 Here is some information about different motorcycle models:
 
-## Model 1
+## BMW M1000RR
 
 ![Model 1](MotocicletePVIR/2023-BMW-M1000RR-21-scaled.jpg)
 
