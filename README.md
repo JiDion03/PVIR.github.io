@@ -8,9 +8,9 @@ Here is some information about different motorcycle models:
 
 Description of Model 1.
 
-## Model 2
+## Ducati Panigale V4 R
 
-![Model 2](images/model2.jpg)
+![Model 2](MotocicletePVIR/CocMotors-Ducati-Panigale-V4-R-2021-600x338.jpg)
 
 Description of Model 2.
 
