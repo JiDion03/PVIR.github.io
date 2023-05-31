@@ -38,56 +38,55 @@ Description of Model 5.
 
 Description of Model 6.
 
-## Model 7
+## Benelli 752S
 
-![Model 7](images/model7.jpg)
+![Model 7](MotocicletePVIR/benelli-752s-34197-6228.jpg)
 
 Description of Model 7.
 
-## Model 8
+## Suzuki GSX600
 
-![Model 8](images/model8.jpg)
+![Model 8](MotocicletePVIR/download.jpg)
 
 Description of Model 8.
 
-## Model 9
+## Honda Hornet 600
 
-![Model 9](images/model9.jpg)
+![Model 9](MotocicletePVIR/hornet (1).jpg)
 
 Description of Model 9.
 
-## Model 10
+## Suzuki GSR600
 
-![Model 10](images/model10.jpg)
+![Model 10](MotocicletePVIR/hq720.jpg)
 
 Description of Model 10.
 
-## Model 11
+## BMW R1200GS
 
-![Model 11](images/model11.jpg)
+![Model 11](MotocicletePVIR/images.jpg)
 
 Description of Model 11.
 
-## Model 12
-
-![Model 12](images/model12.jpg)
+## Kawasaki Ninja 650R
+![Model 12](MotocicletePVIR/kawa650.jpg)
 
 Description of Model 12.
 
-## Model 13
+## KTM Duke 125
 
-![Model 13](images/model13.jpg)
+![Model 13](MotocicletePVIR/ktm-duke-125-2022~5795.jpg)
 
 Description of Model 13.
 
-## Model 14
+## Kawasaki Ninja H2R
 
-![Model 14](images/model14.jpg)
+![Model 14](MotocicletePVIR/share_Maisto-1-12-kawasaki-ninja-h2r-model-de-simulare-motocicletă-thumbs.jpg)
 
 Description of Model 14.
 
-## Model 15
+## Ducati Diavel
 
-![Model 15](images/model15.jpg)
+![Model 15](MotocicletePVIR/2000000001.jpg)
 
 Description of Model 15.
