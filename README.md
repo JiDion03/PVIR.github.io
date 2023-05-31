@@ -34,7 +34,7 @@ Description of Model 5.
 
 ## Honda CBR 1000RR
 
-![Model 6](MotocicletePVIR/Motocicleta Honda CBR1000RR-R Fireblade 2022 - 1-650x1.jpg)
+![Model 6](195885_2020_HONDA_CBR1000RR-R_SP.jpg)
 
 Description of Model 6.
 
@@ -52,7 +52,7 @@ Description of Model 8.
 
 ## Honda Hornet 600
 
-![Model 9](MotocicletePVIR/hornet (1).jpg)
+![Model 9](d9a373a3bb8c7eb7a2e5719733be4044.jpg)
 
 Description of Model 9.
 
