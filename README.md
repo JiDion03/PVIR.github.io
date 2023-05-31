@@ -14,27 +14,27 @@ Description of Model 1.
 
 Description of Model 2.
 
-## Model 3
+## Ducati Superleggera V4
 
-![Model 3](images/model3.jpg)
+![Model 3](MotocicletePVIR/CocMotors-Ducati-Superleggera-V4-2021-2-600x338.jpg)
 
 Description of Model 3.
 
-## Model 4
+## Suzuki Hayabusa
 
-![Model 4](images/model4.jpg)
+![Model 4](MotocicletePVIR/Hayabusa-news-pic-inside-7.jpg)
 
 Description of Model 4.
 
-## Model 5
+## Kawasaki Ninja 250R
 
-![Model 5](images/model5.jpg)
+![Model 5](MotocicletePVIR/Kawasaki_Ninja_250R_2007TMS.jpg)
 
 Description of Model 5.
 
-## Model 6
+## Honda CBR 1000RR
 
-![Model 6](images/model6.jpg)
+![Model 6](MotocicletePVIR/Motocicleta Honda CBR1000RR-R Fireblade 2022 - 1-650x1.jpg)
 
 Description of Model 6.
 
