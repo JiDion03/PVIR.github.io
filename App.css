@@ -10,19 +10,20 @@ h1 {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
 }
 
 .model {
-  width: 300px;
-  margin: 20px;
+  width: 250px;
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
   background-color: #333;
   color: #fff;
+  border-radius: 8px;
 }
 
 .model img {
@@ -30,16 +31,117 @@ h1 {
   height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 8px;
 }
 
-.search-bar {
-  text-align: center;
+.navigation {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-#search-input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.nav-link {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.nav-link.active {
+  background-color: #555;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+}
+
+.exhaust-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.exhaust-item {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.exhaust-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.container.engine {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.engine-item {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.engine-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.engine-info {
+  margin-top: 10px;
+}
+
+
+.back-link {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.back-link:hover {
+  background-color: #555;
+}
+
+
