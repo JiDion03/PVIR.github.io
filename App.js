@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { createRoot } from 'react-dom';
+
+import EngineInformation from './EngineInformation';
+import ExhaustInformation from './ExhaustInformation';
 import './App.css';
+
 import img1 from './images/2023-BMW-M1000RR-21-scaled.jpg';
 import img2 from './images/2000000001.jpg';
 import img3 from './images/CocMotors-Ducati-Panigale-V4-R-2021-600x338.jpg';
@@ -11,11 +17,13 @@ import img8 from './images/harley.jpg';
 import img9 from './images/hornet (1).jpg';
 import img10 from './images/ccmub30oxucfzxm-23my-z400-gn1-f39-500x500_300x300.jpg';
 import img11 from './images/share_Maisto-1-12-kawasaki-ninja-h2r-model-de-simulare-motocicletă-thumbs.jpg';
-import img12 from  './images/street-triple-765-rs-step-carousel-6-1410x793.jpg';
+import img12 from './images/street-triple-765-rs-step-carousel-6-1410x793.jpg';
 import img13 from './images/kavasaki ninja 400.jpg';
 import img14 from './images/2000000012.jpg';
 import img15 from './images/bmwr1250r.jpg';
 import img16 from './images/hds750.jpg';
+
+
 const Model = ({ imgSrc, name, engine, power, torque, weight, seatHeight }) => {
   return (
     <div className="model">
@@ -29,6 +37,33 @@ const Model = ({ imgSrc, name, engine, power, torque, weight, seatHeight }) => {
     </div>
   );
 };
+
+const Navigation = () => {
+    const [currentPage, setCurrentPage] = useState('engine');
+  
+    const handlePageChange = (page) => {
+      setCurrentPage(page);
+    };
+  
+    return (
+      <div className="navigation">
+        <Link
+          className={`nav-link ${currentPage === 'engine' ? 'active' : ''}`}
+          to="/engine"
+          onClick={() => handlePageChange('engine')}
+        >
+          Engine Information
+        </Link>
+        <Link
+          className={`nav-link ${currentPage === 'exhaust' ? 'active' : ''}`}
+          to="/exhaust"
+          onClick={() => handlePageChange('exhaust')}
+        >
+          Exhaust Information
+        </Link>
+      </div>
+    );
+  };
 
 const App = () => {
   const [searchInput, setSearchInput] = useState('');
@@ -178,36 +213,54 @@ const App = () => {
       weight: '491 lbs (223 kgs)',
       seatHeight: '28.34 inches w/ low seat (720 mm)'
     }
-    // Add more models here
   ];
 
-  const filterModels = () => {
-    return models.filter(model =>
-      model.name.toLowerCase().includes(searchInput.toLowerCase())
-    );
+  const handleInputChange = (e) => {
+    setSearchInput(e.target.value);
   };
 
+  const filteredModels = models.filter((model) =>
+    model.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
+  
+
   return (
-    <div className="App">
-      <h1>Motorcycle Information</h1>
-
-      <div className="search-bar">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Search models"
-          value={searchInput}
-          onChange={e => setSearchInput(e.target.value)}
-        />
+    <Router>
+      <div className="app">
+        <h1>Motorcycle Information</h1>
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search by name..."
+            value={searchInput}
+            onChange={handleInputChange}
+            className="search-input"
+          />
+        </div>
+        <Navigation />
+        <Routes>
+          <Route path="/engine" element={<EngineInformation />} />
+          <Route path="/exhaust" element={<ExhaustInformation />} />
+          <Route path="/" element={<div className="container">
+            {filteredModels.map((model, index) => (
+              <Model
+                key={index}
+                imgSrc={model.imgSrc}
+                name={model.name}
+                engine={model.engine}
+                power={model.power}
+                torque={model.torque}
+                weight={model.weight}
+                seatHeight={model.seatHeight}
+              />
+            ))}
+          </div>} />
+        </Routes>
       </div>
-
-      <div className="container">
-        {filterModels().map((model, index) => (
-          <Model key={index} {...model} />
-        ))}
-      </div>
-    </div>
+    </Router>
   );
 };
 
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
 export default App;
