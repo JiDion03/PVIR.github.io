@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+  <title>Motorcycle Information</title>
+  <style>
+    /* Basic styling */
+body {
+      font-family: 'Exo 2', Arial, sans-serif;
+      background-color: #202020;
+      color: #ffffff;
+      margin: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .model {
+      width: 300px;
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+    }
+    
+    .model img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    .search-bar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .search-bar input {
+      padding: 5px;
+      width: 300px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Motorcycle Information</h1>
+  
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search models" onkeyup="filterModels()">
+  </div>
+  
+  <div class="container">
+    <div class="model">
+      <img src="MotocicletePVIR/2023-BMW-M1000RR-21-scaled.jpg" alt="Model 1">
+      <h2>BMW M1000RR</h2>
+      <p>Engine: 999cc Water/oil-cooled in-line four cylinder four stroke</p>
+</p>Power: 205 horsepower</p>
+</p>Torque: 83 lb-ft</p>
+</p>Weight: 375 lbs (170 kgs)</p>
+</p>Seat Height: 32.8 inches (833 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/2000000001.jpg" alt="Model 2">
+      <h2>Ducati Diavel</h2>
+      </p>Engine: 1,262 cc liquid-cooled, Testastretta DVT V2 engine</p>
+      </p>Power:  159 HP</p>
+      </p>Torque: 95 lbs-ft</p>
+      </p>Wet Weight: 514 lbs (233 kg)</p>
+      </p>Seat Height: 30.7 in (780 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/CocMotors-Ducati-Panigale-V4-R-2021-600x338.jpg" alt="Model 3">
+      <h2>Ducati Panigale V4 R</h2>
+      </p>Engine: 998 Desmosedici Stradale 90-degree V4 engine</p>
+</p>Power: 221 HP</p>
+</p>Torque: 83 lbs-ft</p>
+</p>Dry Weight: 379 lbs (172 kg)</p>
+</p>Seat Height: 32.7 in (830 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/CocMotors-Ducati-Superleggera-V4-2021-2-600x338.jpg" alt="Model 4">
+      <h2>Ducati Superleggera V4</h2>
+      </p>Engine: 998cc Desmosedici Stradale V4 engine</p>
+</p>Power: 224 HP</p>
+</p>Torque: 85.6 lbs-ft</p>
+</p>Dry Weight: 350 lbs (159 kg)</p>
+</p>Seat Height: 32.9 in (835 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/Hayabusa-news-pic-inside-7.jpg" alt="Model 5">
+      <h2>Suzuki Hayabusa</h2>
+      </p>Engine: 1340cc, 4-stroke, liquid-cooled, 4-cylinder, DOHC engine</p>
+</p>Power: 188 HP</p>
+</p>Torque: 110 lb-ft</p>
+</p>Kerb Weight: 582 lbs (264 kg)</p>
+</p>Seat Height: 31.5 in (800 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/Suzuki.jpg" alt="Model 6">
+      <h2>Suzuki GSX-S750</h2>
+      </p>Engine: 749cc Inline four</p>
+</p>Power: 112.6 hp</p>
+</p>Torque: 59.7 lb-ft</p>
+</p>Weight: 469 lbs (213 kg)</p>
+</p>Seat Height: 32.2 inches (820mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/Motocicleta Honda CBR1000RR-R Fireblade 2022 - 1-650x1.jpg" alt="Model 7">
+      <h2>Honda CBR1000RR</h2>
+      </p>Engine: 998cc Four-cylinder</p>
+</p>Power: 183 HP</p>
+</p>Torque: 84 lb-ft</p>
+</p>Wet Weight: 432 lbs (196 kg)</p>
+</p>Seat Height: 833 mm (32.8 in.) at lowest point</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/harley.jpg" alt="Model 8">
+      <h2>Harley Davidson Freewheeler</h2>
+      </p>Engine: 114 ci V-twin</p>
+</p>Power: 100.5 HP (estimated)</p>
+</p>Torque: 118 lbs-ft @ 3000 RPM</p>
+</p>Wet Weight: 1,110 lb. (505 kg)</p>
+</p>Seat Height: 26.2 in. (665 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/hornet (1).jpg" alt="Model 9">
+      <h2>Honda Hornet</h2>
+            </p>Engine: 755cc Liquid-cooled OHC 4-stroke 8-valve Parallel Twin with 270° crank and uni-cam</p>
+  </p>Power: 90 HP</p>
+  </p>Torque: 55 lb-ft</p>
+  </p>Wet Weight: 418 lbs (190 kg)</p>
+  </p>Seat Height: 795mm (32 in.) at lowest point</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/ccmub30oxucfzxm-23my-z400-gn1-f39-500x500_300x300.jpg" alt="Model 10">
+      <h2>Kavasaki Z400</h2>
+      </p>Engine: 399 cc 4-stroke, 2-cylinder, DOHC, liquid-cooled</p>
+</p>Power: 44 horsepower</p>
+</p>Torque: 25 lb-ft</p>
+</p>Weight: 363lbs (164 kgs)</p>
+</p>Seat Height: 30.9 inches (784 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/share_Maisto-1-12-kawasaki-ninja-h2r-model-de-simulare-motocicletă-thumbs.jpg" alt="Model 11">
+      <h2>Kawasaki Ninja H2R</h2>
+      </p>Engine: 998cc, liquid-cooled, 4-stroke, DOHC 16-valve in-line four</p>
+</p>Power: 310 horsepower</p>
+</p>Torque: 121 lb-ft</p>
+</p>Weight: 476 lbs (216 kgs)</p>
+</p>Seat Height: 32.7 inches (830 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/street-triple-765-rs-step-carousel-6-1410x793.jpg" alt="Model 12">
+      <h2>Triumph Street Triple 765 RS</h2>
+      </p>Engine: 765 cc DOHC, inline 3-cylinder</p>
+</p>Power: 128 HP (estimated)</p>
+</p>Torque: 59 lbs-ft @ 9500 RPM</p>
+</p>Wet Weight: 414 lb (188 kg)</p>
+</p>Seat Height: 33 in (836 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/kavasaki ninja 400.jpg" alt="Model 13">
+      <h2>Kawasaki Ninja 400</h2>
+      </p>Engine: 399 cc liquid-cooled, 4-stroke, DOHC 8-valve parallel twin</p>
+</p>Power: 44.8 horsepower</p>
+</p>Torque: 27 lb-ft</p>
+</p>Weight: 366 lbs (166 kgs)</p>
+</p>Seat Height: 30.9 inches (785 mm)</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/2000000012.jpg" alt="Model 14">
+      <h2>Ducati Hypermotard 950</h2>
+      </p>Engine: 937cc L-Twin</p>
+</p>Power: 114 hp</p>
+</p>Torque: 71 lbs-ft at the crank</p>
+</p>Wet Weight: 440 lbs (200 kg)</p>
+</p>Seat Height: 34.2  inches (870 mm) at lowest point</p>
+    </div>
+    
+    <div class="model">
+      <img src="MotocicletePVIR/bmwr1250r.jpg" alt="Model 15">
+      <h2>BMW R 1250 R</h2>
+      </p>Engine: 1,254 cc two-cylinder, air/liquid-cooled, four-stroke</p>
+</p>Power: 136 horsepower</p>
+</p>Torque: 105 lb-ft</p>
+</p>Weight: 527 lbs (240 kgs)</p>
+</p>Seat Height: 29.9 inches w/ low seat (759 mm)</p>
+    </div>
+  </div>
+  
+  <script>
+    function filterModels() {
+      var input = document.getElementById('search-input').value.toLowerCase();
+      var models = document.getElementsByClassName('model');
+      
+      for (var i = 0; i < models.length; i++) {
+        var modelName = models[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+        
+        if (modelName.includes(input)) {
+          models[i].style.display = 'block';
+        } else {
+          models[i].style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
